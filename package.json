@@ -1,0 +1,23 @@
+{
+  "name": "alqamar-models",
+  "version": "1.0.0",
+  "description": "Shared models for backend and frontend",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "publish:github": "npm publish --registry=https://npm.pkg.github.com"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "private": false
+}
