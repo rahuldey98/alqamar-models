@@ -43,7 +43,7 @@ if [[ -z "${NODE_AUTH_TOKEN:-}" ]]; then
 fi
 
 if [[ ! -f "package.json" ]]; then
-  echo "Error: run this from the shared-dtos repo root (package.json not found)."
+  echo "Error: run this from the alqamar-models repo root (package.json not found)."
   exit 1
 fi
 
@@ -60,7 +60,14 @@ npm run clean
 npm run build
 
 echo "Bumping version ($BUMP_TYPE)..."
-NEW_VERSION="$(npm version "$BUMP_TYPE")" # creates commit + tag
+NEW_VERSION="$(npm version "$BUMP_TYPE" --no-git-tag-version)"
+
+echo "Staging build artifacts and version files..."
+git add dist package.json package-lock.json
+
+echo "Creating release commit and tag..."
+git commit -m "release: ${NEW_VERSION}"
+git tag "$NEW_VERSION"
 
 echo "Publishing to GitHub Packages..."
 npm publish --registry="$REGISTRY"
