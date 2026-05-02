@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.dayOfWeekSchema = exports.userGenderSchema = exports.statusSchema = exports.userRoleSchema = void 0;
+exports.dateSchema = exports.dayOfWeekSchema = exports.userGenderSchema = exports.statusSchema = exports.userRoleSchema = void 0;
 const zod_1 = require("zod");
 exports.userRoleSchema = zod_1.z.enum(["ADMIN", "TEACHER", "STUDENT"]);
 exports.statusSchema = zod_1.z.enum(["ACTIVE", "INACTIVE"]);
@@ -14,3 +14,4 @@ exports.dayOfWeekSchema = zod_1.z.enum([
     "SATURDAY",
     "SUNDAY"
 ]);
+exports.dateSchema = zod_1.z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Invalid date format. Use YYYY-MM-DD");

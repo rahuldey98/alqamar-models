@@ -21,6 +21,7 @@ export declare const dayOfWeekSchema: z.ZodEnum<{
     SATURDAY: "SATURDAY";
     SUNDAY: "SUNDAY";
 }>;
+export declare const dateSchema: z.ZodString;
 export type UserRole = z.infer<typeof userRoleSchema>;
 export type UserStatus = z.infer<typeof statusSchema>;
 export type UserGender = z.infer<typeof userGenderSchema>;
