@@ -1,8 +1,9 @@
 import { z } from "zod";
 export declare const getAttendanceSchema: z.ZodObject<{
     query: z.ZodObject<{
-        classId: z.ZodCoercedNumber<unknown>;
-        date: z.ZodString;
+        fromDate: z.ZodOptional<z.ZodString>;
+        toDate: z.ZodOptional<z.ZodString>;
     }, z.core.$strip>;
 }, z.core.$strip>;
+export type GetAttendanceRequest = z.infer<typeof getAttendanceSchema>["query"];
 //# sourceMappingURL=get-attendance.d.ts.map
