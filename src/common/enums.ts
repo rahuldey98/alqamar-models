@@ -12,6 +12,7 @@ export const dayOfWeekSchema = z.enum([
   "SATURDAY",
   "SUNDAY"
 ]);
+export const dateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Invalid date format. Use YYYY-MM-DD");
 
 export type UserRole = z.infer<typeof userRoleSchema>;
 export type UserStatus = z.infer<typeof statusSchema>;
