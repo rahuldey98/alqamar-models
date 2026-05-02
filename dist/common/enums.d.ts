@@ -23,7 +23,7 @@ export declare const dayOfWeekSchema: z.ZodEnum<{
 }>;
 export declare const dateSchema: z.ZodString;
 export type UserRole = z.infer<typeof userRoleSchema>;
-export type UserStatus = z.infer<typeof statusSchema>;
+export type Status = z.infer<typeof statusSchema>;
 export type UserGender = z.infer<typeof userGenderSchema>;
 export type DayOfWeek = z.infer<typeof dayOfWeekSchema>;
 //# sourceMappingURL=enums.d.ts.map
