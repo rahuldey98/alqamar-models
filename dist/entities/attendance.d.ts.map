@@ -1,0 +1,1 @@
+{"version":3,"file":"attendance.d.ts","sourceRoot":"","sources":["../../src/entities/attendance.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,mBAAmB,CAAC;AAE/C,MAAM,WAAW,UAAU;IACvB,EAAE,EAAE,MAAM,CAAC;IACX,OAAO,EAAE,MAAM,CAAC;IAChB,IAAI,EAAE,UAAU,CAAC;CACpB"}

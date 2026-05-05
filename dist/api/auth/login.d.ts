@@ -1,0 +1,10 @@
+import { UserResponse } from '../users/user-response';
+export interface LoginRequest {
+    phone: string;
+    password: string;
+}
+export interface LoginResponse {
+    accessToken: string;
+    user: UserResponse;
+}
+//# sourceMappingURL=login.d.ts.map

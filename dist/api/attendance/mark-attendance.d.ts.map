@@ -1,0 +1,1 @@
+{"version":3,"file":"mark-attendance.d.ts","sourceRoot":"","sources":["../../../src/api/attendance/mark-attendance.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,sBAAsB,CAAC;AAElD,MAAM,WAAW,qBAAqB;IAClC,OAAO,EAAE,MAAM,CAAC;IAChB,IAAI,EAAE,UAAU,CAAC;CACpB;AAED,MAAM,WAAW,sBAAsB;IACnC,OAAO,EAAE,IAAI,CAAC;CACjB"}

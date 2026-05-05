@@ -1,0 +1,1 @@
+{"version":3,"file":"get-student.d.ts","sourceRoot":"","sources":["../../../src/api/users/get-student.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,2BAA2B,CAAC;AACvD,OAAO,EAAE,YAAY,EAAE,MAAM,iBAAiB,CAAC;AAE/C,MAAM,MAAM,kBAAkB,GAAG,YAAY,GAAG;IAC5C,SAAS,EAAE,MAAM,CAAC;IAClB,SAAS,EAAE,MAAM,CAAC;IAClB,WAAW,EAAE,UAAU,EAAE,CAAC;CAC7B,CAAC"}

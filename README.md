@@ -1,6 +1,6 @@
 # alqamar-models
 
-Shared TypeScript DTOs and API response models for Alqamar backend/frontend projects.
+Shared TypeScript types and API contracts for Alqamar backend/frontend projects. This package is **types-only** — it has no runtime dependencies and emits near-empty `.js` files alongside `.d.ts`.
 
 ## Package
 
@@ -34,13 +34,49 @@ npm install @rahuldey98/alqamar-models
 
 ```ts
 import type {
-  LoginRequestDto,
-  LoginResponseDto,
-  UserRequestDto,
-  UserResponseDto,
+  // common
   ApiResponse,
+  ApiSuccessResponse,
+  ApiErrorResponse,
+  UserRole,
+  Status,
+  UserGender,
+  DayOfWeek,
+  DateString,
+  TimeString,
+
+  // entities
+  User,
+  Class,
+  ClassSchedule,
+  Course,
+  Enrollment,
+  Attendance,
+
+  // api
+  LoginRequest,
+  LoginResponse,
+  UserResponse,
+  CreateUserRequest,
+  CreateUserResponse,
+  UpdateUserRequest,
+  UpdateUserParams,
+  UpdateUserResponse,
+  GetStudentResponse,
+  CreateClassRequest,
+  CreateClassResponse,
+  MarkAttendanceRequest,
+  MarkAttendanceResponse,
+  GetAttendanceQuery,
+  GetAttendanceResponse,
 } from "@rahuldey98/alqamar-models";
 ```
+
+### Structure
+
+- `entities/` — canonical domain types (single source of truth: `User`, `Class`, `Course`, `Enrollment`, `Attendance`).
+- `api/<resource>/<endpoint>` — request/response types per endpoint, derived from entities with `Pick`/`Omit`/`Partial`.
+- `common/` — `ApiResponse<T>`, string-literal enums, branded scalar aliases (`DateString`, `TimeString`).
 
 ## Local Development
 

@@ -1,20 +1,14 @@
-import {z} from "zod";
+export type UserRole = 'ADMIN' | 'TEACHER' | 'STUDENT';
 
-export const userRoleSchema = z.enum(["ADMIN", "TEACHER", "STUDENT"]);
-export const statusSchema = z.enum(["ACTIVE", "INACTIVE"]);
-export const userGenderSchema = z.enum(["MALE", "FEMALE"]);
-export const dayOfWeekSchema = z.enum([
-  "MONDAY",
-  "TUESDAY",
-  "WEDNESDAY",
-  "THURSDAY",
-  "FRIDAY",
-  "SATURDAY",
-  "SUNDAY"
-]);
-export const dateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Invalid date format. Use YYYY-MM-DD");
+export type Status = 'ACTIVE' | 'INACTIVE';
 
-export type UserRole = z.infer<typeof userRoleSchema>;
-export type Status = z.infer<typeof statusSchema>;
-export type UserGender = z.infer<typeof userGenderSchema>;
-export type DayOfWeek = z.infer<typeof dayOfWeekSchema>;
+export type UserGender = 'MALE' | 'FEMALE';
+
+export type DayOfWeek =
+    | 'MONDAY'
+    | 'TUESDAY'
+    | 'WEDNESDAY'
+    | 'THURSDAY'
+    | 'FRIDAY'
+    | 'SATURDAY'
+    | 'SUNDAY';

@@ -1,6 +1,6 @@
 {
   "name": "@rahuldey98/alqamar-models",
-  "version": "1.0.11",
+  "version": "1.1.0",
   "description": "Shared models for backend and frontend",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,9 +14,6 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
-  },
-  "dependencies": {
-    "zod": "^4.3.6"
   },
   "devDependencies": {
     "typescript": "^5.5.3"
