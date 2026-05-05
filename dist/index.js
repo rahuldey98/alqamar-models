@@ -30,3 +30,4 @@ __exportStar(require("./api/users/get-student"), exports);
 __exportStar(require("./api/classes/create-class"), exports);
 __exportStar(require("./api/attendance/mark-attendance"), exports);
 __exportStar(require("./api/attendance/get-attendance"), exports);
+__exportStar(require("./api/dashboard/overview"), exports);

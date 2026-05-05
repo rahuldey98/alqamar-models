@@ -14,4 +14,5 @@ export * from './api/users/get-student';
 export * from './api/classes/create-class';
 export * from './api/attendance/mark-attendance';
 export * from './api/attendance/get-attendance';
+export * from './api/dashboard/overview';
 //# sourceMappingURL=index.d.ts.map
