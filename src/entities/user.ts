@@ -11,4 +11,6 @@ export interface User {
     gender?: UserGender;
     age?: number;
     meetLink?: string;
+    feesDate?: string;
+    courseId?: number;
 }
