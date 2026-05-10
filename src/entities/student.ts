@@ -4,6 +4,8 @@ import {Class} from "./class";
 
 export interface Student extends User{
     feesDate?: string;
+    courseId?: number;
     course?: Course;
+    classId?: number;
     class?: Class;
 }
