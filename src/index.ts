@@ -3,6 +3,8 @@ export * from './common/enums';
 export * from './common/scalars';
 
 export * from './entities/user';
+export * from './entities/teacher';
+export * from './entities/student';
 export * from './entities/course';
 export * from './entities/class';
 export * from './entities/enrollment';

@@ -10,9 +10,6 @@ export interface CreateUserRequest {
     status?: Status;
     gender?: UserGender;
     age?: number;
-    meetLink?: string;
-    feesDate?: string;
-    courseId?: number;
 }
 
 export type CreateUserResponse = UserResponse;

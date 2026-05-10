@@ -10,7 +10,4 @@ export interface User {
     status?: Status;
     gender?: UserGender;
     age?: number;
-    meetLink?: string;
-    feesDate?: string;
-    courseId?: number;
 }
