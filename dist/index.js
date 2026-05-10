@@ -18,6 +18,8 @@ __exportStar(require("./common/api"), exports);
 __exportStar(require("./common/enums"), exports);
 __exportStar(require("./common/scalars"), exports);
 __exportStar(require("./entities/user"), exports);
+__exportStar(require("./entities/teacher"), exports);
+__exportStar(require("./entities/student"), exports);
 __exportStar(require("./entities/course"), exports);
 __exportStar(require("./entities/class"), exports);
 __exportStar(require("./entities/enrollment"), exports);

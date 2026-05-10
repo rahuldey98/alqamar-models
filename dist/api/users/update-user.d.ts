@@ -9,9 +9,6 @@ export interface UpdateUserRequest {
     status?: Status;
     gender?: UserGender;
     age?: number;
-    meetLink?: string;
-    feesDate?: string;
-    courseId?: number;
 }
 export interface UpdateUserParams {
     id: string;
