@@ -1,6 +1,18 @@
-import { User } from '../../entities/user';
+import { UserRole, Status, UserGender } from '../../common/enums';
 import { UserResponse } from './user-response';
-export type UpdateUserRequest = Partial<Omit<User, 'id'>>;
+export interface UpdateUserRequest {
+    name?: string;
+    phone?: string;
+    role?: UserRole;
+    password?: string;
+    email?: string;
+    status?: Status;
+    gender?: UserGender;
+    age?: number;
+    meetLink?: string;
+    feesDate?: string;
+    courseId?: number;
+}
 export interface UpdateUserParams {
     id: string;
 }
