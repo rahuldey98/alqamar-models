@@ -10,6 +10,7 @@ export interface CreateUserRequest {
     status?: Status;
     gender?: UserGender;
     age?: number;
+    teacherId?: number; // Only for students
 }
 
 export type CreateUserResponse = UserResponse;

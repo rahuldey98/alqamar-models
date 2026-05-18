@@ -8,4 +8,6 @@ export interface Student extends User{
     course?: Course;
     classId?: number;
     class?: Class;
+    teacherId?: number;
+    teacher?: User;
 }
