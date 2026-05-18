@@ -9,6 +9,7 @@ export interface CreateUserRequest {
     status?: Status;
     gender?: UserGender;
     age?: number;
+    teacherId?: number;
 }
 export type CreateUserResponse = UserResponse;
 //# sourceMappingURL=create-user.d.ts.map
