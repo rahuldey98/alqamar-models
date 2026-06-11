@@ -8,6 +8,6 @@ export interface Student extends User {
     classId?: number;
     class?: Class;
     teacherId?: number;
-    teacher?: User;
+    teacherName?: string;
 }
 //# sourceMappingURL=student.d.ts.map
